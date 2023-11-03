@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz de Perguntas e Respostas</h1>
+        <form id="quiz-form">
+            
+            <div class="question">
+                <p>Pergunta 1: O que significa a sigla "HTML"?</p>
+                <label><input type="radio" name="q1" value="a"> a) Hyper Transfer Markup Language</label>
+                <label><input type="radio" name="q1" value="b"> b) High Tech Modern Language</label>
+                <label><input type="radio" name="q1" value="c"> c) Hyper Text Markup Language</label>
+                <p id="q1-feedback" class="feedback"></p>
+            </div>
+
+           
+            <div class="question">
+                <p>Pergunta 2: Qual elemento HTML é usado para criar um link para uma página externa?</p>
+                <label><input type="radio" name="q2" value="a"> a) &lt;a&gt;</label>
+                <label><input type="radio" name="q2" value="b"> b) &lt;link&gt;</label>
+                <label><input type="radio" name="q2" value="c"> c) &lt;href&gt;</label>
+                <p id="q2-feedback" class="feedback"></p>
+            </div>
+
+           
+            <div class="question">
+                <p>Pergunta 3: Qual propriedade CSS é usada para definir a cor do texto?</p>
+                <label><input type="radio" name="q3" value="a"> a) background-color</label>
+                <label><input type="radio" name="q3" value="b"> b) font-color</label>
+                <label><input type="radio" name="q3" value="c"> c) color</label>
+                <p id="q3-feedback" class="feedback"></p>
+            </div>
+
+            
+            <div class="question">
+                <p>Pergunta 4: Como você comenta um bloco de código CSS?</p>
+                <label><input type="radio" name="q4" value="a"> a) /* Comentário */</label>
+                <label><input type="radio" name="q4" value="b"> b) // Comentário</label>
+                <label><input type="radio" name="q4" value="c"> c) &lt;!-- Comentário --&gt;</label>
+                <p id="q4-feedback" class="feedback"></p>
+            </div>
+
+            
+            <div class="question">
+                <p>Pergunta 5: Qual palavra-chave em JavaScript é usada para declarar uma variável?</p>
+                <label><input type="radio" name="q5" value="a"> a) variable</label>
+                <label><input type="radio" name="q5" value="b"> b) var</label>
+                <label><input type="radio" name="q5" value="c"> c) v</label>
+                <p id="q5-feedback" class="feedback"></p>
+            </div>
+
+            <input type="submit" value="Verificar Respostas">
+        </form>
+    </div>
+    <div id="result-container">
+        <h2>Resultado</h2>
+        <p id="score">Pontuação: <span id="score-value">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
